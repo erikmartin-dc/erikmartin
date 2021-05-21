@@ -20,146 +20,33 @@
   <meta name="twitter:image" content="">
 </head>
 <body>
-  <div id="loader"></div>
-  <style>
-    /* For best practice, move CSS below to an external CSS file. */
-    @keyframes fadeinall {
-    0% {
-      opacity: 1; }
-    97% {
-      opacity: 0; }
-    98% {
-      opacity: 0;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); }
-    99% {
-      opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%); }
-    100% {
-      opacity: 0;
-      z-index: -1; } }
-    #loader {
-      opacity: 1;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      background-color: #fff;
-      z-index: 999;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation: fadeinall 1s normal both;
-      animation: fadeinall 1s normal both;
-      -webkit-animation-delay: 0.3s;
-      animation-delay: 0.3s; }
-  </style>
-  <div class="fixed-top">
-  <header class="topbar">
-      <div class="container">
-        <div class="row">
-          <!-- social icon-->
-          <div class="col-sm-12">
-            <ul class="social-network">
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-  </header>
-  <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
-    <div class="container">
-      <a class="navbar-brand" rel="nofollow" target="_blank" href="http://scadonsak.com/7bF" style="text-transform: uppercase;"> NUSASATU.COM</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-
-        <ul class="navbar-nav ml-auto">
-
-          <li class="nav-item active">
-            <a class="nav-link" href="https://nusasatu.com">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-
-         <li class="nav-item">
-            <a class="nav-link" href="#">Fruits</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sea food</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vegetables</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <main>
+    <nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+      </ul>
     </div>
   </nav>
-</div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">Column 1</div>
-      <div class="col-sm-4">Column 2</div>
-      <div class="col-sm-4">Column 3</div>
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Double header</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+      </form>
     </div>
-  </div>
-  <div id="cookie-notice" class="w-100 bg-dark text-white pt-3 px-4 pb-1 position-fixed" style="z-index: 1000; bottom: 0;">
-    <div class="container p-2">
-      <div class="row">
-        <div class="col-sm-8 col-md-9">
-          <p class="p-2">This website uses cookies so that we can provide you with the best website experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a href="#"><u>Privacy Policy</u></a>.</p> 
-        </div>
-        <div class="col-sm-4 col-md-3">
-          <a class="i-accept btn btn-primary m-2">I Accept</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--[if IE]><div class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed" style="z-index: 1000; bottom: 0;"><p onClick="parentNode.remove()">Please use a modern browser for a better browsing experience. <span class="float-right">X</span></p></div><![endif]-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    (function($){
-      $('.i-accept').on('click', function() {   
-        if(localStorage.noshow !== '1') {
-          $('#cookie-notice').addClass('d-none');
-           localStorage.noshow='1';
-        }  
-      });
-      if(localStorage.noshow == '1') {
-        $('#cookie-notice').addClass('d-none');
-      };
-    })(jQuery);
-  </script>
-  <script type="text/javascript">
-  window.onload = function(){
-    setTimeout(function(){
-      document.getElementById("loader").remove();
-    },1000);
-  };
-  </script>
+  </header>
+  </main>
 </body>
 </html>
