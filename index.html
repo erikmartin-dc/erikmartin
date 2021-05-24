@@ -20,7 +20,7 @@
   <meta name="twitter:image" content="/portfoliologo.png">
   <script src="https://kit.fontawesome.com/d4ae7eec71.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#page_nav_bar">
   <style>
     body {
       background: #121212;
@@ -75,37 +75,65 @@
         <img src="/portfoliologo.png" width="32" height="32" style="border-radius: 50%;" class="me-2">
         <span class="fs-4">Erik Martin</span>
       </a>
-      <ul class="nav nav-pills fancy-header-nav">
-        <li class="nav-item"><a href="#" class="nav-link link-light active" aria-current="page">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light">Experience</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light">Education</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-light">Contact</a></li>
+      <ul class="nav nav-pills fancy-header-nav" id="page_nav_bar">
+        <li class="nav-item"><a href="#about_header" class="nav-link link-light active" aria-current="page">About</a></li>
+        <li class="nav-item"><a href="#experience_header" class="nav-link link-light">Experience</a></li>
+        <li class="nav-item"><a href="#education_header" class="nav-link link-light">Education</a></li>
+        <li class="nav-item"><a href="#project_header" class="nav-link link-light">Projects</a></li>
+        <li class="nav-item"><a href="#contact_header" class="nav-link link-light">Contact</a></li>
       </ul>
     </div>
   </header>
     <div class="container main-page">
       <ul class="nav nav-pills justify-content-center mobile-page-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
+          <a class="nav-link active" aria-current="page" href="#about_header">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Experience</a>
+          <a class="nav-link" href="#experience_header">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Education</a>
+          <a class="nav-link" href="#education_header">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#project_header">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact_header">Contact</a>
         </li>
       </ul>
       <hr>
       <div class="p-5 mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">About Me</h1>
+          <h1 class="display-5 fw-bold" id="about_header">About Me</h1>
+          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+          <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        </div>
+      </div>
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold" id="experience_header">About Me</h1>
+          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+          <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        </div>
+      </div>
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold" id="education_header">About Me</h1>
+          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+          <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        </div>
+      </div>
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold" id="project_header">About Me</h1>
+          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+          <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        </div>
+      </div>
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold" id="contact_header">About Me</h1>
           <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
           <button class="btn btn-primary btn-lg" type="button">Example button</button>
         </div>
