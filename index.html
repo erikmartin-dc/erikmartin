@@ -42,9 +42,15 @@
         color: #fff;
         background-color: #03a9f4;
     }
+    .mobile-page-nav {
+      display:none;
+    }
     @media (max-width: 767px) {
       .fancy-header-nav {
           display: none;
+      }
+      .mobile-page-nav {
+        display:flex;
       }
     }
     .main-page {
@@ -70,7 +76,7 @@
         <span class="fs-4">Erik Martin</span>
       </a>
       <ul class="nav nav-pills fancy-header-nav">
-        <li class="nav-item"><a href="#" class="nav-link link-light active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light active" aria-current="page">About</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-light">Experience</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-light">Education</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-light">Projects</a></li>
@@ -79,18 +85,21 @@
     </div>
   </header>
     <div class="container main-page">
-      <ul class="nav nav-pills justify-content-center">
+      <ul class="nav nav-pills justify-content-center mobile-page-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link active" aria-current="page" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
       <hr>
