@@ -35,6 +35,26 @@
 	background-color: rgba(255, 255, 255, 0.40) !important;
     	backdrop-filter: blur(20px) saturate(125%);
     }
+	  * Works on Firefox */
+	* {
+	  scrollbar-width: thin;
+	  scrollbar-color: blue orange;
+	}
+
+	/* Works on Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {
+	  width: 12px;
+	}
+
+	*::-webkit-scrollbar-track {
+	  background: orange;
+	}
+
+	*::-webkit-scrollbar-thumb {
+	  background-color: blue;
+	  border-radius: 20px;
+	  border: 3px solid orange;
+	}
     .fancy-header-color {
       background: -webkit-linear-gradient(45deg, #ff8605 48%, #1b1e21 48%);
       background: -webkit-linear-gradient(left, #ff8605 48%, #1b1e21 48%);
